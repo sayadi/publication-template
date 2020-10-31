@@ -1,0 +1,31 @@
+\documentclass[../presentation.tex]{subfiles}
+
+\input{../shared/title}
+\input{../shared/authors}
+\input{../shared/date}
+
+%% What's inside the brackets [] appears on every slide in the presentation.
+%% What's inside the body {} appears on the title page in the presentation.
+\title[\researchTitle] {
+    \textbf{\researchTitle}
+}
+
+\subtitle[] {
+    \textbf{\researchSubTitle}
+}
+
+\author[\authorOne]{
+    \texorpdfstring{
+        \authorOne{}, \affilOne{}, \emailOne{} \\
+        \authorTwo{}, \affilTwo{}, \emailTwo{} \\
+        \authorThree{}, \affilThree{}, \emailThree{} \\
+    }
+    \authorOne
+}
+
+\date{\presentationDate{}}
+
+{\1
+\begin{frame}[plain, noframenumbering]
+  \titlepage{}
+\end{frame}}

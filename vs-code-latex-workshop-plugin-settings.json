@@ -1,0 +1,146 @@
+{
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+        {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+        ]
+        },
+        {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+        },
+        {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+        ]
+        },
+        {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+        "name": "xelatex -> bibtex -> xelatex*2",
+        "tools": [
+            "xelatex",
+            "bibtex",
+            "xelatex",
+            "xelatex"
+        ]
+        },
+        {
+        "name": "latexmk",
+        "tools": [
+            "latexmk"
+        ]
+        },
+        {
+        "name": "pdflatex -> bibtex -> pdflatex*2",
+        "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
+        ]
+        }
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        // Tex-related files
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.log": true,
+        "**/*.synctex.gz": true,
+        "**/*.toc": true,
+        // Beamer-related
+        "**/*.nav": true,
+        "**/*.out": true,
+        "**/*.snm": true,
+        // Themes-related
+        "**/*.sty": true
+    },
+    // Common latex keywords for spell check to ignore
+    "cSpell.userWords": [
+        "Accl",
+        "Anthos",
+        "Kubernetes",
+        "RTTs",
+        "SMBs",
+        "Sharjah",
+        "URes",
+        "allowframebreaks",
+        "backgroundfile",
+        "basicstyle",
+        "beamer",
+        "bibtex",
+        "biolinum",
+        "caladea",
+        "captionof",
+        "carlito",
+        "dvipsnames",
+        "expandafter",
+        "firstline",
+        "framesubtitle",
+        "frametitle",
+        "helvet",
+        "inconsolata",
+        "insertcontinuationcount",
+        "lastline",
+        "latexmk",
+        "linewidth",
+        "listoflistings",
+        "logofile",
+        "logoscale",
+        "lstinputlisting",
+        "lstlistoflistings",
+        "lstset",
+        "noframenumbering",
+        "nonstopmode",
+        "numexpr",
+        "pdflatex",
+        "progressstyle",
+        "setbeamercolor",
+        "setbeamertemplate",
+        "subfiles",
+        "synctex",
+        "texorpdfstring",
+        "textarabic",
+        "textbackslash",
+        "thesubtitle",
+        "usebeamercolor",
+        "usecolortheme",
+        "usetheme",
+        "verbatiminput",
+        "xcolor",
+        "xelatex"
+      ]
+}

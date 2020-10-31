@@ -1,0 +1,76 @@
+\usetheme[
+  % progressstyle=fixedCircCnt,
+  fixedCircCnt,
+  movingCircCnt]
+  {Feather}
+
+%-------------------------------------------------------
+% Color Options
+%-------------------------------------------------------
+
+%% Change the bar colors:
+\setbeamercolor{Feather}{fg=Black!20,bg=Black}
+
+%%Change the color of the structural elements:
+\setbeamercolor{structure}{fg=Black}
+
+%% Change the frame title text color:
+\setbeamercolor{frametitle}{fg=black!5}
+
+%% Change the normal text colors:
+\setbeamercolor{normal text}{fg=black!75,bg=gray!5}
+
+%% Change the block title colors
+\setbeamercolor{block title}{use=Feather,bg=Feather.fg, fg=black!90} 
+
+%-------------------------------------------------------
+% Logo Options
+%-------------------------------------------------------
+
+%% Change the logo in the upper right circle:
+\renewcommand{\logofile}{../assets/images/institute-logo.png}
+%% Adjust scale of the logo w.r.t. the circle; default is 0.875
+\renewcommand{\logoscale}{0.55}
+
+%% Change the background image on the title and final page.
+%% It stretches to fill the entire frame!
+\renewcommand{\backgroundfile}{../assets/images/background.jpg}
+
+%-------------------------------------------------------
+% Include Packages
+%-------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% \usepackage{helvet}
+
+%% Load different font packages to use different fonts
+
+%% Option: Using Linux Libertine, Linux Biolinum and Inconsolata
+% \usepackage{libertine}
+
+%% Option: Using Carlito and Caladea
+\usepackage{carlito}
+\usepackage{caladea}
+
+%% Option: Using Venturis ADF Serif and Sans
+% \usepackage{venturis}
+
+\usepackage{zi4}
+
+%-------------------------------------------------------
+% Defining and Redefining Commands
+%-------------------------------------------------------
+
+% Colored hyperlinks
+\newcommand{\chref}[2]{
+  \href{#1}{{\usebeamercolor[bg]{Feather}#2}}
+}
+
+%-------------------------------------------------------
+% Frame Break Options
+%-------------------------------------------------------
+
+% Remove numbering on frame break
+\setbeamertemplate{frametitle continuation}{}
